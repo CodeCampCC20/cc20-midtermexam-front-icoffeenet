@@ -57,7 +57,7 @@ function LoginPage() {
   return (
     <div className='p-8'>
      <div className='w-2/5 border rounded-3xl p-8 mx-auto my-40'>
-      <h1 className='text-2xl mb-4'>Welcome</h1>
+      <h1 className='text-2xl font-bold mb-4'>Welcome</h1>
       <form className='space-y-4'
       onSubmit={handleSubmit}>
         <InputForm
@@ -86,14 +86,14 @@ function LoginPage() {
             </>
             : 
             <>
-            <Send className='w-5 h-5'/>
-            <span>LOGIN</span>
+            <Send className='w-5 h-5 text-white'/>
+            <span className='font-medium text-white'>LOGIN</span>
             </>
             }
         </button>
         
       </form>
-      <button  disabled= {isLoading} className='w-full mt-8 py-2 bg-gray-700 hover:bg-blue-400 duration-200 rounded-xl flex items-center justify-center gap-1'>
+      <button  disabled= {isLoading} className='text-white w-full mt-8 py-2 bg-gray-700 hover:bg-blue-400 duration-200 rounded-xl flex items-center justify-center gap-1 font-medium'>
           Register
         </button>
      </div>

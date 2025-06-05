@@ -1,10 +1,6 @@
 @import "tailwindcss";
 @plugin "daisyui" {
-  themes: light --default, dark
-}
-
-.NavButton {
-  border-radius: 8px;
+  themes: light --default
 }
 
 li {

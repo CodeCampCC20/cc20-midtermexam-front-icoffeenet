@@ -21,7 +21,7 @@ function TodoPage() {
     return (
         <div>
             <div>
-                <div className="flex flex-col not-[]:items-center justify-self-center w-96 p-8 bg-base-300 rounded-xl mt-8">
+                <div className="flex flex-col not-[]:items-center justify-self-center w-96 p-8 bg-base-300 rounded-xl mt-64 border-white border-1">
                     <h1 className="font-bold mb-4">Todo List</h1>
                     <div className="flex flex-col gap-4">
                         <div className="flex flex-row content-center">

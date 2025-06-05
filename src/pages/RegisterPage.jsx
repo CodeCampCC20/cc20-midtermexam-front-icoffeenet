@@ -31,15 +31,15 @@ function LoginPage() {
       setIsLoading(true)
       console.log(input)
        
-      //validator
+
       schemaRegister.validateSync(input, {abortEarly: false})
-      //api
+
       const res = await authApi.register(input)
       console.log("res.data",res.data)
 
       setInput(initialInput)
       navigate('/');
-      //success
+
       toast.success("Login success!!!")
     }catch(error){
       console.log(error)
@@ -56,7 +56,7 @@ function LoginPage() {
     }
   }
   return (
-    <div className='p-8 bg-green-700'>
+    <div className='p-8 bg-base-700'>
      <div className='w-2/5 border rounded-3xl p-8 mx-auto my-40'>
       <h1 className='text-2xl mb-4'>Welcome</h1>
       <form className='space-y-4'

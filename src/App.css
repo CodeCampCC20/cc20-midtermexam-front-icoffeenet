@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: light --default;
+}
+
+.NavButton {
+  border-radius: 8px;
+}
+
+li {
+  list-style-type: none;
+}
